@@ -1,105 +1,149 @@
-# 🗓️ Weekly Task Scheduler
+### ✅ `README.md`
 
-A modern web application for managing your weekly tasks and schedule.  
-Built with **React**, **TypeScript**, and **Material-UI**.
+```markdown
+# 📅 Weekly Task Scheduler
 
----
-
-## 🌟 Features
-
-- Create and manage tasks for each day of the week
-- Set task title, description, time, category and priority
-- Mark tasks as completed
-- Delete tasks
-- Responsive design for desktop and mobile
-- Clean and modern Material UI interface
-- Data persists using browser `localStorage`
+A **modern, responsive task scheduling web app** built using **React + TypeScript** and **Material UI (MUI)**. The app helps users organize their weekly tasks efficiently with persistent local storage support.
 
 ---
 
-## 🚀 Live Preview
+## 🔗 Live Demo
 
-👉 [https://weekly-task-scheduler.vercel.app](https://weekly-task-scheduler.vercel.app)
+🌐 **Check it out here**:  
+[https://weekly-task-scheduler.vercel.app](https://weekly-task-scheduler.vercel.app)
 
 ---
 
-## 🛠️ Getting Started
+## 🚀 Features
 
-### ✅ Prerequisites
+- 📝 Add new tasks with:
+  - Weekday selection
+  - Priority (Low, Medium, High)
+  - Optional category
+- ✅ Mark tasks as completed or incomplete
+- 🗑️ Delete tasks
+- 📅 View tasks organized by each weekday
+- 🔄 Persistent storage using `localStorage`
+- 🎨 Beautiful and clean Material UI design
+- ⚡ Fast performance with Vite
 
-- Node.js (v14 or higher)
-- npm (v6 or higher)
+---
 
-### 📥 Installation
+## 🧪 Tech Stack
+
+| Tech             | Description                              |
+|------------------|------------------------------------------|
+| **React**        | Frontend library                         |
+| **TypeScript**   | Static typing                            |
+| **Material UI**  | UI framework for React                   |
+| **Vite**         | Lightning-fast frontend build tool       |
+| **LocalStorage** | For persistent task saving in browser    |
+| **Vercel**       | Deployment platform                      |
+
+---
+
+## 📁 Folder Structure
+
+```
+
+Weekly-Task-Scheduler/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/       # Reusable React components
+│   ├── App.tsx           # Main app component
+│   ├── main.tsx          # Entry point
+│   └── ...
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
+````
+
+---
+
+## 💻 Run Locally
+
+Follow these steps to set it up on your local machine:
+
+### 1. Clone the Repository
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/Dipanshu-sandhaki/Weekly-Task-Scheduler.git
-
-# 2. Navigate to the project directory
 cd Weekly-Task-Scheduler
+````
 
-# 3. Install dependencies
+### 2. Install Dependencies
+
+```bash
 npm install
+```
 
-# 4. Start the development server
+### 3. Start the Development Server
+
+```bash
 npm run dev
-🖥️ Open in Browser
-Go to:
-http://localhost:5173
+```
 
-📋 Usage Guide
-Click the "Add Task" button to create a new task
+Now visit `http://localhost:5173` in your browser.
 
-Fill in the task details:
+---
 
-Title
+## 🧩 Usage Instructions
 
-Description
+1. Click the **“Add Task”** button.
+2. Fill in the task details:
 
-Day of the week
+   * Select the **weekday**
+   * Choose a **priority level**
+   * Optionally, set a **category**
+3. Your task will appear in the corresponding day's section.
+4. You can **mark it as complete**, or **delete it** anytime.
+5. All your tasks are saved in **localStorage**.
 
-Time
+---
 
-Category
+## 📦 Build for Production
 
-Priority
+To create a production-ready build:
 
-Click "Add Task" to save it
+```bash
+npm run build
+```
 
-Use the checkbox to mark tasks as completed
+This will generate a `dist/` folder containing optimized static files.
 
-Use the delete icon to remove tasks
+---
 
-📦 Tech Stack
-React
+## 🌍 Deployment on Vercel
 
-TypeScript
+The app is deployed using **[Vercel](https://vercel.com)**. To deploy your own version:
 
-Material UI
+1. Push your project to GitHub.
+2. Go to [vercel.com](https://vercel.com) and log in.
+3. Click **“New Project”** and import your GitHub repo.
+4. Vercel will auto-detect Vite + React setup.
+5. Click **“Deploy”** and your app will go live!
 
-Vite
+---
 
-LocalStorage
+## 👨‍💻 Author
 
-date-fns (optional)
+**Dipanshu Sandhaki**
+📍 Kolkata, India
+🎓 MCA Student | MERN Stack Developer
+🌐 [LinkedIn](https://www.linkedin.com/in/dipanshu-sandhaki)
+💼 [Portfolio](https://dipanshusandhaki-portfolio.vercel.app)
 
-📁 Folder Structure (Simplified)
-css
-Copy
-Edit
-src/
-├── components/
-│   ├── Header.tsx
-│   ├── Footer.tsx
-│   └── WeeklySchedule.tsx
-├── App.tsx
-└── main.tsx
-👨‍💻 Author
-Dipanshu Sandhaki
-📍 MCA Student | Web Developer
-🔗 GitHub Profile
+---
 
-📃 License
-This project is licensed under the MIT License.
+## ⭐ Support
 
+If you find this project useful, consider giving it a ⭐ star and sharing it with others!
+
+---
+
+## 📃 License
+
+This project is licensed under the [MIT License](LICENSE).
