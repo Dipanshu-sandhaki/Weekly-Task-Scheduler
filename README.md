@@ -42,24 +42,14 @@ A **modern, responsive task scheduling web app** built using **React + TypeScrip
 
 ---
 
-## 📁 Folder Structure
-
-```
-
-Weekly-Task-Scheduler/
-├── public/
-│   └── vite.svg
-├── src/
-│   ├── components/       # Reusable React components
-│   ├── App.tsx           # Main app component
-│   ├── main.tsx          # Entry point
-│   └── ...
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-
-````
+🛠️ Folder Structure 
+📁 src
+├── 📁 components
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   └── WeeklySchedule.tsx
+├── App.tsx
+└── main.tsx
 
 ---
 
