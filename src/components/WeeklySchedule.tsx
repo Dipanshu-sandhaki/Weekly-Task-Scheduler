@@ -120,10 +120,6 @@ const WeeklySchedule = ({
   const totalTasks = tasks.length;
   const completedTasks = tasks.filter(task => task.completed).length;
   const completionRate = totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
-  const tasksByDay = DAYS_OF_WEEK.reduce((acc, day) => {
-    acc[day] = getTasksForDay(day).length;
-    return acc;
-  }, {} as Record<string, number>);
 
   // Get unique categories from tasks and combine with predefined categories
   const categories = Array.from(new Set([
