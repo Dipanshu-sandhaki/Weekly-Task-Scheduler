@@ -1,7 +1,4 @@
 import { Box, Typography, Container, Divider } from '@mui/material';
-import CodeIcon from '@mui/icons-material/Code';
-import SchoolIcon from '@mui/icons-material/School';
-import ComputerIcon from '@mui/icons-material/Computer';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 const Footer = () => {
@@ -17,30 +14,8 @@ const Footer = () => {
     >
       <Container maxWidth="lg">
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-            <CodeIcon color="primary" />
-            <Typography variant="h6" color="text.primary">
-              Web Developer | MCA Student
-            </Typography>
-          </Box>
           
           <Divider sx={{ width: '100%', my: 1 }} />
-          
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 3 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <SchoolIcon color="primary" />
-              <Typography variant="body2" color="text.secondary">
-                Pursuing Master of Computer Applications
-              </Typography>
-            </Box>
-            
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-              <ComputerIcon color="primary" />
-              <Typography variant="body2" color="text.secondary">
-                Full Stack Development Enthusiast
-              </Typography>
-            </Box>
-          </Box>
 
           <Box sx={{ mt: 2, textAlign: 'center' }}>
             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 1, mb: 1 }}>
@@ -53,10 +28,15 @@ const Footer = () => {
               Plan your tasks, set priorities, and track your progress throughout the week.
             </Typography>
           </Box>
+
+          {/* ✅ Simple copyright text */}
+          <Typography variant="body2" color="text.secondary" sx={{ mt: 3 }}>
+            © {new Date().getFullYear()} Weekly Task Scheduler. All rights reserved. Created by <strong>Dipanshu Sandhaki</strong>
+          </Typography>
         </Box>
       </Container>
     </Box>
   );
 };
 
-export default Footer; 
+export default Footer;

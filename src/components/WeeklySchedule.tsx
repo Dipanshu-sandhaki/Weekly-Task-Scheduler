@@ -483,26 +483,6 @@ const WeeklySchedule = ({
         ))}
       </Box>
 
-      <Box 
-        sx={{ 
-          mt: 6, 
-          py: 3, 
-          textAlign: 'center', 
-          borderTop: '1px solid', 
-          borderColor: 'divider',
-          bgcolor: 'background.paper',
-          borderRadius: 1,
-          boxShadow: 1,
-        }}
-      >
-        <Typography variant="body2" color="text.secondary">
-          © {new Date().getFullYear()} Weekly Task Scheduler. All rights reserved.
-        </Typography>
-        <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
-          Created by <strong>Dipanshu Sandhaki</strong>
-        </Typography>
-      </Box>
-
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Add New Task</DialogTitle>
         <DialogContent>
