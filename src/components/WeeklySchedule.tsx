@@ -112,9 +112,6 @@ const WeeklySchedule = ({
     handleClose();
   };
 
-  const getTasksForDay = (day: string) => {
-    return tasks.filter((task) => task.day === day);
-  };
 
   // Calculate task statistics
   const totalTasks = tasks.length;
