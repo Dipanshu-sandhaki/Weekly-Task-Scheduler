@@ -70,12 +70,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box sx={{ 
-        minHeight: '100vh', 
-        display: 'flex', 
-        flexDirection: 'column',
-        bgcolor: 'background.default' 
-      }}>
+      <Box
+        sx={{
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          bgcolor: 'background.default',
+        }}
+      >
         <Header />
         <Container maxWidth="lg" sx={{ mt: 4, mb: 4, flex: 1 }}>
           <WeeklySchedule
